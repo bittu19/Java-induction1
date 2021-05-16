@@ -1,0 +1,44 @@
+body {
+    background-color: lightcyan;
+    /* background color */
+}
+
+div {
+    margin-top: 20px;
+    /* margin of 20px top between every div container*/
+}
+
+div>h3 {
+    color: #88ff22;
+    /* all heading-3 of color #88ff22*/
+}
+
+div>h1 {
+    font-size: 40px;
+    /* My Resume of font-size 40px*/
+}
+
+div>h2 {
+    color: rgb(0, 0, 250);
+    /*profile name with text color */
+}
+
+div>h4 {
+    color: rgb(0, 0, 250);
+    /*mo and email id with text color*/
+}
+
+div>p {
+    color: rgb(0, 0, 250);
+    /*synopsis paragraph with text color*/
+}
+
+div>ul {
+    color: rgb(0, 0, 250);
+    /* hobies list with the text color*/
+}
+
+div>table {
+    color: rgb(0, 0, 250);
+    /*grade table with the text color*/
+}
