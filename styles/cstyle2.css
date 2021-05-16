@@ -1,0 +1,62 @@
+div {
+    background-color: rgba(73, 167, 187, 1);
+    border: black solid;
+}
+
+h1 {
+    font-size: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.heading {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input[name="Name"] {
+    background-color: honeydew;
+    border-radius: 2px;
+}
+
+input[name="Name"]:hover {
+    background-color: chartreuse;
+}
+
+input[name="Mob"] {
+    background-color: honeydew;
+    border-radius: 2px;
+}
+
+input[name="Mob"]:hover {
+    background-color: chartreuse
+}
+
+input[name="Email"] {
+    background-color: honeydew;
+    border-radius: 2px;
+}
+
+input[name="Email"]:hover {
+    background-color: chartreuse;
+}
+
+input[name="HOBBES"] {
+    background-color: honeydew;
+    border-radius: 2px;
+}
+
+input[name="HOBBES"]:hover {
+    background-color: chartreuse;
+}
+
+input[name="Marks"] {
+    background-color: honeydew;
+    border-radius: 2px;
+}
+
+input[name="Marks"]:hover {
+    background-color: chartreuse;
+}
+
+input[name="submit"]:hover {
+    background-color: red;
+}
