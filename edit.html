@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>edit form</title>
+    <link rel="stylesheet" href="styles/cstyle2.css">
+</head>
+
+<body>
+    <h1>EDIT FORM</h1>
+    <hr/>
+    <div>
+        <form action="/EditProfile" method="post">
+            <table>
+                <tr>
+
+                    <td><label class="heading">Name:</label></td>
+                    <td><input type="text" name="Name" value="" placeholder="write ur name "></input>
+                    </td>
+                </tr>
+                <tr>
+                    <td> <label class="head">Mob:</label></td>
+                    <td> <input type="text" name="Mob" value="" placeholder="write ur phn no"></input>
+                    </td>
+                </tr>
+                <tr>
+                    <td> <label class="heading">Email:</label></td>
+                    <td> <input type="email" name="Email" value="" placeholder="bhgghfgf@gmail.com"></input>
+                    </td>
+                </tr>
+                <tr>
+                    <td> <label>SYNOPSIS:</label></td>
+                    <td> <textarea cols="24" rows="10"></textarea> </td>
+                </tr>
+                <tr>
+                    <td> <label class="heading">HOBBIES:</label></td>
+                    <td> <input type="text" name="HOBBIES" value="" placeholder="HOBBY"></input>
+                    </td>
+                </tr>
+
+            </table>
+
+            <label class="heading">GRADES:</label>
+            <select>
+                <option value="sslc">SSLC</option>
+                <option value="hslc">HSLC</option>
+                <option value="bachelor">BACHELOR</option>
+            </select>
+            <br>
+            <table>
+                <tr>
+                    <td> <label class="heading">MARKS</label></td>
+                    <td><input type="text" name="Marks" value="" placeholder="marks">
+                        <td>
+                </tr>
+                <tr>
+                    <td><input type="submit" value="submit" name="submit"></td>
+                </tr>
+            </table>
+
+        </form>
+    </div>
+</body>
+
+</html>
