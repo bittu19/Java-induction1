@@ -1,0 +1,33 @@
+body {
+    background-color: lightcyan;
+}
+
+div {
+    margin-top: 20px;
+}
+
+#title {
+    font-size: 40px;
+    /* My resume heading*/
+    color: black;
+}
+
+#name,
+
+/*name and details*/
+
+#details {
+    color: rgb(0, 0, 250);
+}
+
+#heading-3 {
+    /*all the h3 heading -> grade,synopsis,hobbies*/
+    color: #88ff22;
+}
+
+.synopsis-details,
+.hobbies-list,
+.grades-details {
+    color: rgb(0, 0, 250);
+    /*all the text inside h3 with color */
+}
