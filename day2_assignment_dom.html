@@ -14,7 +14,7 @@
     <script>
         function check() {
             var x = Math.floor(Math.random()*10)
-            var y = document.getElementById("input").nodeValue
+            var y =ParseInnt( document.getElementById("input").nodeValue)
             if (y == x) {
                 document.getElementById("result").innerHTML = "YOU WON"
             } else {
