@@ -62,13 +62,12 @@
         function result() {
             try {
                 var x = document.getElementById("n").value;
-                document.getElementById("name").innerHTML = x;
-
+               
                 if (x.length < 2) {
                     throw "NAME IS NOT VALID"
                 }
                 var y = document.getElementById("e").value;
-                document.getElementById("email").innerHTML = y;
+              
 
                 if ((y.search('com') === -1) || (y.search('org') == -1)) {
                     throw "INVALID EMAIL"
