@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<head>
+    <title>validation form</title>
+    <style>
+        #form {
+            margin-top: 20%;
+            margin-left: 40%;
+            margin-right: 40%;
+            border: black solid 1px;
+            background-color: chartreuse;
+        }
+        
+        #button {
+            margin-top: 20%;
+            margin-left: 180%;
+        }
+        
+        #button:hover {
+            background-color: crimson;
+        }
+        
+        #result {
+            margin-top: 20%;
+            margin-left: 40%;
+            margin-right: 40%;
+            border: black solid 1px;
+            font-size: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="form">
+        <form>
+            <table>
+                <tr>
+                    <td><label>NAME</label></td>
+                    <td> <input type="text" name="name" placeholder="name here" id="n"></td>
+                </tr>
+                <tr>
+                    <td><label>EMAIL</label></td>
+                    <td> <input type="email" name="email" placeholder="n@.com" id="e"></td>
+                </tr>
+                <tr>
+                    <td><label>USERID</label></td>
+                    <td> <input type="text" name="userid" placeholder="id here" id="u"></td>
+                </tr>
+                <tr>
+
+                    <td> <input type="submit" value="submit" onclick="result()" id="button"></td>
+                </tr>
+
+
+            </table>
+        </form>
+
+    </div>
+
+    <script>
+        function result() {
+            try {
+                var x = document.getElementById("n").value;
+                document.getElementById("name").innerHTML = x;
+
+                if (x.length < 2) {
+                    throw "NAME IS NOT VALID"
+                }
+                var y = document.getElementById("e").value;
+                document.getElementById("email").innerHTML = y;
+
+                if ((y.search('com') === -1) || (y.search('org') == -1)) {
+                    throw "INVALID EMAIL"
+                }
+
+            } catch (err) {
+                alert(err)
+            }
+        }
+    </script>
+</body>
+
+</html>
