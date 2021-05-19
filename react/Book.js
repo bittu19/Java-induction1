@@ -23,7 +23,7 @@ const removeBookHandler=(id)=>
      {
             books.map((book)=>
             {
-                return <Books key={book.id} title={book} onRemove={()=>{removeBookHandler(book.id)}} ></Books>
+                return <Books key={book.id} title={book.title} onRemove={()=>{removeBookHandler(book.id)}} ></Books>
             })
         
         }
