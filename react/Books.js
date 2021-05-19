@@ -11,7 +11,7 @@ const Books=(props)=>
         <button onClick={props.onRemove}>Remove</button>
         <button onClick={()=> {
             setShowEdit(true);
-            setTitle(props.book.title)
+            setTitle(props.title)
          }
         } >EDIT</button>
         </div>
