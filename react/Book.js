@@ -65,7 +65,7 @@ useEffect(deleteBooks,[refresh])*/
 const addBookHandler = () => {
     // const booksCopy = [...books, {id:Math.round(Math.random()*100), title:title}];
     // setBooks(booksCopy);
-    axios.put('http://localhost:5000/books', {title}).then((res)=>{
+    axios.post('http://localhost:5000/books', {title}).then((res)=>{
         setRefresh(!refresh)
     })
 }
@@ -84,7 +84,7 @@ const removeBookHandler=(id)=>
 const editBookHandler=(id,title)=>
 {
     console.log(id);
-    axios.post('http://localhost:5000/books/'+id,{title}).then((res)=>
+    axios.put('http://localhost:5000/books/'+id,{title}).then((res)=>
     {
         setRefresh(!refresh)
     })
